@@ -1,6 +1,5 @@
 # Write your MySQL query statement below
-SELECT  author_id AS id
-FROM Views
-WHERE author_id = viewer_id
-GROUP BY id
-ORDER BY author_id ASC;
+SELECT distinct author_id as id 
+FROM Views 
+WHERE author_id = viewer_id 
+order by id asc
